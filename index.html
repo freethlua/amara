@@ -1,0 +1,31 @@
+<html>
+
+<head> </head>
+
+<body>
+  <h1>Amara</h1>
+  <h2>Load video</h2>
+  <form id="onUrl" onsubmit="onUrl(event)">
+    <input placeholder="Enter Youtube Video ID only"> </form>
+  <div id="player"></div>
+  <p>Use
+    <kbd>Tab</kbd> key to play/pause </p>
+  <hr/>
+  <h2>Add captions</h2>
+  <p>Just enter what you hear. Keep lines short.</p>
+  <textarea id="textarea" cols="30" rows="10" placeholder="Enter text here"></textarea>
+  <hr/>
+  <h2>Synchronize</h2>
+  <p>Use
+    <kbd>Up</kbd>/
+    <kbd>Down</kbd> keys to sync: </p>
+  <p id="syncPrev"></p>
+  <form id="onSyncEnter" onsubmit="onSyncEnter(event)"> <span></span>
+    <input id="onSyncEnter.input" onfocus="onSyncFocus()" onkeydown="onSyncKeyDown(event)" > <span></span> </form>
+  <p id="syncNext"></p>
+  <hr/>
+  <h2>Console (debug logs)</h2> <pre id="console"></pre>
+  <script src="index.js"></script>
+</body>
+
+</html>
